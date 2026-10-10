@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-app="mnrf">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="referrer" content="no-referrer" />
+  <title>MNRF App</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
+  <meta name="theme-color" content="#120e0c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="MNRF" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #120e0c; color: #f3e8dc; font: 17px/1.45 system-ui, sans-serif; text-align: center; }
+    main { padding: 2rem; max-width: 22rem; }
+    h1 { font-size: 1.3rem; margin: 0 0 .6rem; color: #f0c078; }
+    button { margin-top: 1rem; font: inherit; font-weight: 700; padding: .65rem 1.4rem; border-radius: 999px; border: 1px solid #e8a045; background: #2a1f18; color: #f3e8dc; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MNRF App</h1>
+    <p id="msg">Opening…</p>
+    <button id="retry" type="button" hidden>Try again</button>
+    <noscript><p>Turn on JavaScript to open the app.</p></noscript>
+  </main>
+  <script src="../go/go.js"></script>
+</body>
+</html>
