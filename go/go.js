@@ -19,7 +19,8 @@
       .then(function (r) { if (!r.ok) throw 0; return r.text(); })
       .then(function (txt) {
         var u = (txt || "").trim().split(/\s+/)[0];
-        return ok.test(u) ? u.replace(/\/$/, "") : (i < sources.length - 1 ? get(i + 1) : null);
+        // The first source that answers is authoritative ("offline" or anything else = no link).
+        return ok.test(u) ? u.replace(/\/$/, "") : null;
       })
       .catch(function () { return get(i + 1); });
   }
