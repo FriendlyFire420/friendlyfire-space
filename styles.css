@@ -659,3 +659,7 @@ a:focus-visible, button:focus-visible {
 .avail-buy a:not(.btn) { color: var(--ember-hot); }
 .avail-buy .hero-actions { margin-top: 1rem; }
 .page-hero h1 .accent { color: var(--ember); }
+
+/* About: Dojo bus photos */
+.dojo-gallery { grid-template-columns: repeat(3, 1fr); gap: 0.6rem; margin: 1rem 0 1.5rem; }
+.dojo-gallery img { aspect-ratio: 4 / 3; }
