@@ -618,3 +618,44 @@ a:focus-visible, button:focus-visible {
   object-fit: cover;
   object-position: center 35%;
 }
+
+/* Available Glass page */
+.avail-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+.avail-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.avail-card:hover { border-color: var(--border-strong); }
+@media (min-width: 860px) {
+  .avail-card { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
+}
+.avail-gallery {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding: 4px;
+  align-content: start;
+}
+.avail-gallery a { display: block; border-radius: 8px; overflow: hidden; }
+.avail-gallery img { aspect-ratio: 4 / 5; object-fit: cover; background: #0a0810; }
+.avail-gallery img.featured { aspect-ratio: 4 / 5; max-height: none; }
+.avail-gallery a:first-child { grid-column: 1 / -1; }
+.avail-body { padding: 1.5rem 1.6rem 1.8rem; }
+.avail-body p { font-size: 1rem; color: var(--text-muted); }
+.avail-status {
+  display: inline-block;
+  font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+  color: #0b0a10; background: var(--ember-hot);
+  padding: 0.25rem 0.7rem; border-radius: 999px;
+}
+.avail-title { margin: 0.8rem 0 0.4rem; font-size: 1.6rem; line-height: 1.2; }
+.avail-price { font-size: 1.8rem; font-weight: 800; color: var(--ember); margin-bottom: 0.9rem; }
+.avail-price span { font-size: 1rem; font-weight: 600; color: var(--text-muted); }
+.avail-buy { margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid var(--border); }
+.avail-buy h3 { margin: 0 0 0.4rem; font-size: 1.05rem; }
+.avail-buy a:not(.btn) { color: var(--ember-hot); }
+.avail-buy .hero-actions { margin-top: 1rem; }
+.page-hero h1 .accent { color: var(--ember); }
