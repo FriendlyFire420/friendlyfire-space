@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Page not found · Friendly Fire</title>
+<meta name="robots" content="noindex">
+<script>
+(function(){
+  var p=location.pathname.replace(/\/+$/,'').replace(/\.html$/,'').toLowerCase();
+  var pages=['about','available','distributor','pax-dei','performing','photos','ren-fair','youtube'];
+  var map={'':'/','/home':'/','/index':'/'};
+  pages.forEach(function(n){map['/'+n]='/'+n;});
+  var t=map[p];
+  if(t!==undefined && t!==location.pathname){location.replace(t+location.search+location.hash);}
+})();
+</script>
+</head><body style="background:#0b0b12;color:#eee;font-family:sans-serif;text-align:center;padding:4rem">
+<h1>Page not found</h1><p><a href="/" style="color:#ff8a3d">Go to the Friendly Fire home page</a></p>
+</body></html>
